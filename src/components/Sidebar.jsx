@@ -7,8 +7,11 @@ const Sidebar = () => {
         profilePic="./assets/img/catanacomics.svg"
       />
       <Sugestoes />
-      <Links />
-      <Copyright />
+      <div className="links">
+        Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
+        Localizações • Contas mais relevantes • Hashtags • Idioma
+      </div>
+      <div className="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
     </aside>
   );
 };
@@ -84,17 +87,4 @@ const Sugestao = ({ sugestao: { profilePic, user, reason } }) => {
       <div className="seguir">Seguir</div>
     </div>
   );
-};
-
-const Links = () => {
-  return (
-    <div className="links">
-      Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
-      Localizações • Contas mais relevantes • Hashtags • Idioma
-    </div>
-  );
-};
-
-const Copyright = () => {
-  return <div className="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>;
 };

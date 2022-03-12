@@ -18,7 +18,10 @@ const Stories = () => {
       {stories.map((story, indice) => (
         <Story key={indice} story={story} />
       ))}
-      <Arrow />
+
+      <div className="setinha">
+        <ion-icon name="chevron-forward-circle"></ion-icon>
+      </div>
     </section>
   );
 };
@@ -32,14 +35,6 @@ const Story = ({ story: { image, user } }) => {
         <img src={image} alt={`Foto do perfil de ${user}`} />
       </div>
       <div className="usuario">{user}</div>
-    </div>
-  );
-};
-
-const Arrow = () => {
-  return (
-    <div className="setinha">
-      <ion-icon name="chevron-forward-circle"></ion-icon>
     </div>
   );
 };
